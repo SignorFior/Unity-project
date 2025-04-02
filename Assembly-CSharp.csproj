@@ -60,8 +60,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Main Game\scripts\Something.cs" />
-    <Compile Include="Assets\gridMap\Testing.cs" />
-    <Compile Include="Assets\gridMap\Grid.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
