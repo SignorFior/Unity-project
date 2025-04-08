@@ -7,7 +7,7 @@ public class NewBehaviourScript : MonoBehaviour
 {
     public Rigidbody2D rb;
     public Animator animator;
-    public float movementSpeed = 5;
+    public float movementSpeed = 15;
 
     Vector2 movement;
 
@@ -21,7 +21,7 @@ public class NewBehaviourScript : MonoBehaviour
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("speed", movement.sqrMagnitude);
-
+        
     }
     void FixedUpdate()
     {
