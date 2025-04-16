@@ -2,11 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.U2D.Aseprite;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class mouseinput : MonoBehaviour
 {
+    private Grid grid;
+    private Vector3 PositionInCell;
+    private Vector3 CellInPosition;
 
-    GridLayout gridLayout = transform.parent.GetComponent<GridLayout>();
+    //  GridLayout gridLayout = transform.parent.GetComponent<GridLayout>();
     // Start is called before the first frame update
     void Start()
     {
@@ -23,8 +27,11 @@ public class mouseinput : MonoBehaviour
             Camera camera = Camera.main;
             Ray ray = camera.ScreenPointToRay(Input.mousePosition);
             float angle = Vector3.Angle(camera.transform.forward, ray.direction);
-            Debug.Log((Input.mousePosition));
-
+            CellInPosition = Input.mousePosition;
+            Debug.Log("CellInPosition" + CellInPosition);
+            PositionInCell = grid.WorldToCell(Input.mousePosition);
+            Debug.Log(PositionInCell);
+            
         }
 
     }
