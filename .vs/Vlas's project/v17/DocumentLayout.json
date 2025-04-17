@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\OSTROGLV\\Vlas\u0027s project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C29D054F-163A-D7CF-3AA6-44840788E77E}|Assembly-CSharp.csproj|C:\\Users\\OSTROGLV\\Vlas\u0027s project\\assets\\main game\\player stuff\\mouseinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C29D054F-163A-D7CF-3AA6-44840788E77E}|Assembly-CSharp.csproj|c:\\users\\ostroglv\\vlas\u0027s project\\assets\\main game\\player stuff\\mouseinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C29D054F-163A-D7CF-3AA6-44840788E77E}|Assembly-CSharp.csproj|solutionrelative:assets\\main game\\player stuff\\mouseinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C29D054F-163A-D7CF-3AA6-44840788E77E}|Assembly-CSharp.csproj|C:\\Users\\OSTROGLV\\Vlas\u0027s project\\assets\\main game\\player stuff\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C29D054F-163A-D7CF-3AA6-44840788E77E}|Assembly-CSharp.csproj|solutionrelative:assets\\main game\\player stuff\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C29D054F-163A-D7CF-3AA6-44840788E77E}|Assembly-CSharp.csproj|c:\\users\\ostroglv\\vlas\u0027s project\\assets\\gridscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C29D054F-163A-D7CF-3AA6-44840788E77E}|Assembly-CSharp.csproj|solutionrelative:assets\\gridscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C29D054F-163A-D7CF-3AA6-44840788E77E}|Assembly-CSharp.csproj|C:\\Users\\OSTROGLV\\Vlas\u0027s project\\assets\\main game\\player stuff\\mousefollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C29D054F-163A-D7CF-3AA6-44840788E77E}|Assembly-CSharp.csproj|solutionrelative:assets\\main game\\player stuff\\mousefollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C29D054F-163A-D7CF-3AA6-44840788E77E}|Assembly-CSharp.csproj|C:\\Users\\OSTROGLV\\Vlas\u0027s project\\assets\\gridscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C29D054F-163A-D7CF-3AA6-44840788E77E}|Assembly-CSharp.csproj|solutionrelative:assets\\gridscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C29D054F-163A-D7CF-3AA6-44840788E77E}|Assembly-CSharp.csproj|C:\\Users\\OSTROGLV\\Vlas\u0027s project\\assets\\main game\\player stuff\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C29D054F-163A-D7CF-3AA6-44840788E77E}|Assembly-CSharp.csproj|solutionrelative:assets\\main game\\player stuff\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C29D054F-163A-D7CF-3AA6-44840788E77E}|Assembly-CSharp.csproj|C:\\Users\\OSTROGLV\\Vlas\u0027s project\\assets\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,7 +47,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "mouseFollow.cs",
               "DocumentMoniker": "C:\\Users\\OSTROGLV\\Vlas\u0027s project\\Assets\\Main Game\\player stuff\\mouseFollow.cs",
               "RelativeDocumentMoniker": "Assets\\Main Game\\player stuff\\mouseFollow.cs",
@@ -55,7 +55,8 @@
               "RelativeToolTip": "Assets\\Main Game\\player stuff\\mouseFollow.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T16:40:01.721Z"
+              "WhenOpened": "2025-04-15T16:40:01.721Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -65,7 +66,7 @@
               "RelativeDocumentMoniker": "Assets\\Main Game\\player stuff\\mouseinput.cs",
               "ToolTip": "C:\\Users\\OSTROGLV\\Vlas\u0027s project\\Assets\\Main Game\\player stuff\\mouseinput.cs",
               "RelativeToolTip": "Assets\\Main Game\\player stuff\\mouseinput.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-08T16:48:13.042Z",
               "EditorCaption": ""
@@ -84,13 +85,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "PlayerMovement.cs",
               "DocumentMoniker": "C:\\Users\\OSTROGLV\\Vlas\u0027s project\\Assets\\Main Game\\player stuff\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Main Game\\player stuff\\PlayerMovement.cs",
               "ToolTip": "C:\\Users\\OSTROGLV\\Vlas\u0027s project\\Assets\\Main Game\\player stuff\\PlayerMovement.cs",
               "RelativeToolTip": "Assets\\Main Game\\player stuff\\PlayerMovement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-07T14:59:52.066Z",
               "EditorCaption": ""

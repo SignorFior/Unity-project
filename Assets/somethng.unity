@@ -9314,6 +9314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb721f06fb8286641b0a16635f19aa23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  grid: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
