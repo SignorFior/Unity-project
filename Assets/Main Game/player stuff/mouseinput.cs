@@ -7,38 +7,46 @@ using UnityEngine.UIElements;
 
 public class mouseinput : MonoBehaviour
 {
-    public GridLayout grid;
-    private Vector3 PositionInCell;
-    private Vector3 CellInPosition = new Vector3( 605.00f, 374.00f, 0.00f);
-    private Vector3Int CellInPositionINT = new Vector3Int( 605, 374, 0);
+        public Grid grid;
+        private Vector3 PositionInCell;
+        private RaycastHit2D CellInPosition;
+        public GameObject cubePrefab;
+        private int RayHitPoint;
 
-
-    //  GridLayout gridLayout = transform.parent.GetComponent<GridLayout>();
-    // Start is called before the first frame update
-    void Start()
-    {
-        Debug.Log("s");
-        GridLayout gird = this.gameObject.GetComponent<GridLayout>();
-        Debug.Log(gird);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetMouseButton(0))
+        //  GridLayout gridLayout = transform.parent.GetComponent<GridLayout>();
+        // Start is called before the first frame update
+        void Start()
         {
             
-            Camera camera = Camera.main;
-            Ray ray = camera.ScreenPointToRay(Input.mousePosition);
-            float angle = Vector3.Angle(camera.transform.forward, ray.direction);
-           // CellInPosition = Input.mousePosition;
-            Debug.Log("CellInPosition" + CellInPosition);
-            Debug.Log("PositionInCell" + ray);
-            PositionInCell = grid.LocalToCell(CellInPosition);
-            Debug.Log("PositionInCell" + PositionInCell);
-            
-            
+            Debug.Log("s");
+            Grid gird = this.gameObject.GetComponent<Grid>();
+            Debug.DrawLine(Vector3.zero, new Vector3(5, 0, 0), Color.white, 2.5f);
+            Debug.Log(gird);
         }
 
-    }
+        // Update is called once per frame
+        void Update()
+        {
+            if (Input.GetMouseButton(0))
+            {
+
+                Camera camera = Camera.main;
+                Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+                float angle = Vector3.Angle(camera.transform.forward, ray.direction);
+                CellInPosition = Physics2D.Raycast(ray.origin, ray.direction);
+                Debug.DrawRay(camera.transform.forward, ray.origin, Color.white, 1f);
+                
+                //PositionInCell = grid.WorldToCell(CellInPosition);
+                //Instantiate(cubePrefab, PositionInCell, Quaternion.identity);
+
+
+               // Debug.Log("CellInPosition" + ray);
+                Debug.Log("CellInPosition" + CellInPosition);
+
+                Debug.Log("PositionInCell" + PositionInCell);
+
+
+            }
+
+      } 
 }

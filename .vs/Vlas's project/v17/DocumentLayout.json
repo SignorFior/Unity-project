@@ -42,8 +42,7 @@
               "RelativeToolTip": "Assets\\gridScript.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T16:15:31.553Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T16:15:31.553Z"
             },
             {
               "$type": "Document",
@@ -55,8 +54,7 @@
               "RelativeToolTip": "Assets\\Main Game\\player stuff\\mouseFollow.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T16:40:01.721Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-15T16:40:01.721Z"
             },
             {
               "$type": "Document",
@@ -66,7 +64,7 @@
               "RelativeDocumentMoniker": "Assets\\Main Game\\player stuff\\mouseinput.cs",
               "ToolTip": "C:\\Users\\OSTROGLV\\Vlas\u0027s project\\Assets\\Main Game\\player stuff\\mouseinput.cs",
               "RelativeToolTip": "Assets\\Main Game\\player stuff\\mouseinput.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwCoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-08T16:48:13.042Z",
               "EditorCaption": ""
@@ -93,8 +91,7 @@
               "RelativeToolTip": "Assets\\Main Game\\player stuff\\PlayerMovement.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T14:59:52.066Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T14:59:52.066Z"
             }
           ]
         }
