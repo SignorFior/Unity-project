@@ -64,6 +64,8 @@
     <Compile Include="Assets\Main Game\player stuff\mouseFollow.cs" />
     <Compile Include="Assets\Main Game\player stuff\mouseinput.cs" />
     <Compile Include="Assets\cameraFollow.cs" />
+    <Compile Include="Assets\PlacementSystem.cs" />
+    <Compile Include="Assets\mousePointRay.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
