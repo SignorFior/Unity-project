@@ -16,8 +16,9 @@ public class PlacementSystem : MonoBehaviour
             
             //PositionInCell = grid.WorldToCell(lastPosition);
             Instantiate(mousePointRay.cubePrefab, mousePointRay.lastPosition, Quaternion.identity);
+
         }
-        Vector3 mousePosition = mousePointRay.GetSelectedMapPosition();
-        mouseIndicator.transform.position = mousePosition;
+       // Vector3 mousePosition = mousePointRay.GetSelectedMapPosition();
+        //mouseIndicator.transform.position = mousePosition;
     }
 }

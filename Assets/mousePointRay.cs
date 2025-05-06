@@ -39,11 +39,13 @@ public class mousePointRay : MonoBehaviour
         Vector3 mousePos = Input.mousePosition;
         mousePos.z = sceneCamera.nearClipPlane;
         Ray ray = sceneCamera.ScreenPointToRay(mousePos);
-        Debug.DrawRay(sceneCamera.transform.forward, ray.origin, Color.white, 1f);
+        
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, 100, placementLayermask))
         {
             lastPosition = hit.point;
+            Debug.Log(hit.point);
+            Debug.DrawRay(sceneCamera.transform.forward, ray.origin, Color.white, 1f);
         }
         return lastPosition;
     }
