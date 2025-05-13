@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\OSTROGLV\\Vlas\u0027s project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C29D054F-163A-D7CF-3AA6-44840788E77E}|Assembly-CSharp.csproj|c:\\users\\ostroglv\\vlas\u0027s project\\assets\\mousepointray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C29D054F-163A-D7CF-3AA6-44840788E77E}|Assembly-CSharp.csproj|solutionrelative:assets\\mousepointray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C29D054F-163A-D7CF-3AA6-44840788E77E}|Assembly-CSharp.csproj|c:\\users\\ostroglv\\vlas\u0027s project\\assets\\placementsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C29D054F-163A-D7CF-3AA6-44840788E77E}|Assembly-CSharp.csproj|solutionrelative:assets\\placementsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C29D054F-163A-D7CF-3AA6-44840788E77E}|Assembly-CSharp.csproj|C:\\Users\\OSTROGLV\\Vlas\u0027s project\\assets\\main game\\player stuff\\mouseinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C29D054F-163A-D7CF-3AA6-44840788E77E}|Assembly-CSharp.csproj|solutionrelative:assets\\main game\\player stuff\\mouseinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C29D054F-163A-D7CF-3AA6-44840788E77E}|Assembly-CSharp.csproj|c:\\users\\ostroglv\\vlas\u0027s project\\assets\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C29D054F-163A-D7CF-3AA6-44840788E77E}|Assembly-CSharp.csproj|solutionrelative:assets\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,38 +23,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PlacementSystem.cs",
-              "DocumentMoniker": "C:\\Users\\OSTROGLV\\Vlas\u0027s project\\Assets\\PlacementSystem.cs",
-              "RelativeDocumentMoniker": "Assets\\PlacementSystem.cs",
-              "ToolTip": "C:\\Users\\OSTROGLV\\Vlas\u0027s project\\Assets\\PlacementSystem.cs",
-              "RelativeToolTip": "Assets\\PlacementSystem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
+              "Title": "cameraFollow.cs",
+              "DocumentMoniker": "C:\\Users\\OSTROGLV\\Vlas\u0027s project\\Assets\\cameraFollow.cs",
+              "RelativeDocumentMoniker": "Assets\\cameraFollow.cs",
+              "ToolTip": "C:\\Users\\OSTROGLV\\Vlas\u0027s project\\Assets\\cameraFollow.cs",
+              "RelativeToolTip": "Assets\\cameraFollow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T16:18:07.841Z",
+              "WhenOpened": "2025-05-12T15:18:35.165Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "mousePointRay.cs",
-              "DocumentMoniker": "C:\\Users\\OSTROGLV\\Vlas\u0027s project\\Assets\\mousePointRay.cs",
-              "RelativeDocumentMoniker": "Assets\\mousePointRay.cs",
-              "ToolTip": "C:\\Users\\OSTROGLV\\Vlas\u0027s project\\Assets\\mousePointRay.cs",
-              "RelativeToolTip": "Assets\\mousePointRay.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAQwCYAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T15:44:13.236Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "mouseinput.cs",
               "DocumentMoniker": "C:\\Users\\OSTROGLV\\Vlas\u0027s project\\Assets\\Main Game\\player stuff\\mouseinput.cs",
               "RelativeDocumentMoniker": "Assets\\Main Game\\player stuff\\mouseinput.cs",
               "ToolTip": "C:\\Users\\OSTROGLV\\Vlas\u0027s project\\Assets\\Main Game\\player stuff\\mouseinput.cs",
               "RelativeToolTip": "Assets\\Main Game\\player stuff\\mouseinput.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCcAAABOAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAA5wEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-08T16:48:13.042Z",
               "EditorCaption": ""
