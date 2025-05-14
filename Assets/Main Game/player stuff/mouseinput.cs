@@ -52,11 +52,12 @@ public class mouseinput : MonoBehaviour
                 //Ray ray = cam.ScreenPointToRay(Input.mousePosition);
                 //float angle = Vector3.Angle(camera.transform.forward, ray.direction);
                 CellInPosition = camCam.ScreenToWorldPoint(MousePos) ; //(Input.mousePosition - ScreenResol) + cam.transform.position; //Physics2D.Raycast(ray.origin, ray.direction);
+                CellInPosition.z = CellInPosition.z * 0.0f;
                 //Debug.DrawRay(cam.transform.positi;on, ray.origin, Color.white, 1f);
                 Debug.Log(CellInPosition + "CEll");
                 PositionInCell = grid.WorldToCell(CellInPosition);
                 Debug.Log(PositionInCell + "Positoon");
-                Instantiate(cubePrefab, PositionInCell, Quaternion.identity);
+                Instantiate(cubePrefab, PositionInCell * 5, Quaternion.identity);
                 
 
                 //Debug.Log("CellInPosition" + ray);
