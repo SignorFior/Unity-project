@@ -13,7 +13,6 @@ public class mouseinput : MonoBehaviour
         public Grid grid;
         private Vector3 PositionInCell;
         private Vector3 CellInPosition;
-        public Transform camTransf;
         public Camera camCam;
         public GameObject cubePrefab;
         private int RayHitPoint;
@@ -25,9 +24,7 @@ public class mouseinput : MonoBehaviour
         void Start()
         {
         
-
             Debug.Log(grid); 
-            Debug.Log(camTransf);
             Debug.Log(camCam);
         }
 
@@ -36,7 +33,14 @@ public class mouseinput : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
-            
+                RaycastHit2D hit = Physics2D.Raycast(camCam.transform.position, -Vector2.up, 4f, 0);
+                Debug.DrawRay(camCam.transform.position, -Vector2.up, Color.black, 1f);
+                if (hit)
+                {
+                    
+                }
+                else
+                {
                 MousePos = Input.mousePosition;
                 //Debug.Log(MousePos + "MOUSE POS");
 
@@ -48,7 +52,12 @@ public class mouseinput : MonoBehaviour
 
                 Instantiate(cubePrefab, PositionInCell * 5, Quaternion.identity);
 
+                }
             }
-    } 
-        
+        }
+        void FixedUpdate()
+        {
+            
+        }
+
 }
