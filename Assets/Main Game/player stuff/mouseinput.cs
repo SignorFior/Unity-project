@@ -33,14 +33,7 @@ public class mouseinput : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
-                RaycastHit2D hit = Physics2D.Raycast(camCam.transform.position, -Vector2.up, 4f, 0);
-                Debug.DrawRay(camCam.transform.position, -Vector2.up, Color.black, 1f);
-                if (hit)
-                {
-                    
-                }
-                else
-                {
+            
                 MousePos = Input.mousePosition;
                 //Debug.Log(MousePos + "MOUSE POS");
 
@@ -50,9 +43,8 @@ public class mouseinput : MonoBehaviour
                 PositionInCell = grid.WorldToCell(CellInPosition);
                 //Debug.Log(PositionInCell + "Positoon");
 
-                Instantiate(cubePrefab, PositionInCell * 5, Quaternion.identity);
+                Instantiate(cubePrefab, PositionInCell, Quaternion.identity);
 
-                }
             }
         }
         void FixedUpdate()
