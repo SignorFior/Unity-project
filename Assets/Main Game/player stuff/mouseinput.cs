@@ -16,11 +16,10 @@ public class mouseinput : MonoBehaviour
         private Vector3 MouseInWorld;
         public Camera camCam;
         public GameObject cubePrefab;
-        private int RayHitPoint;
-        private Vector3 ScreenResol;
         private Vector3 MousePos;
         public Transform PlayerPosition;
-        private Vector3 centering = new Vector2(0.5f, 0.5f);
+        private Vector3 centering = new Vector3(0.5f, 0.5f);
+        private 
 
         
         // Start is called before the first frame update
@@ -39,20 +38,22 @@ public class mouseinput : MonoBehaviour
                 
                 MousePos = Input.mousePosition;
                 //Debug.Log(MousePos + "MOUSE POS");
-
                 MouseInWorld = camCam.ScreenToWorldPoint(MousePos);
                 //Debug.Log(MouseInWorld + "CEll");
-
                 WorldInCell = grid.WorldToCell(MouseInWorld);
                 //Debug.Log(WorldInCell + "Positoon");
-                RaycastHit2D hit = Physics2D.Raycast(WorldInCell + centering, PlayerPosition.transform.position, 0.9f);
-                Debug.DrawRay(WorldInCell, PlayerPosition.transform.position + centering, Color.blue, 1f);
-                //Debug.Log(WorldInCell + "World Cell    " );
-                Debug.Log(PlayerPosition.transform.position + centering);
-                Debug.Log("Player Positioning menus centring    " + PlayerPosition.transform.position);
+
+
+
+                RaycastHit2D hit = Physics2D.Raycast(WorldInCell + centering, PlayerPosition.transform.position, 0.5f);
+                
+                Debug.DrawLine(WorldInCell + centering, PlayerPosition.transform.position, Color.blue, 1f);
+
+
                 if (hit)
                 {
                     Debug.Log(hit.collider);
+                    Debug.Log(hit.collider.name);
                 }
                 else
                 {
@@ -62,9 +63,4 @@ public class mouseinput : MonoBehaviour
 
                 }
         }
-        void FixedUpdate()
-        {
-            
-        }
-
 }
