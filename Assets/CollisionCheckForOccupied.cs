@@ -3,16 +3,25 @@ using System.Collections;
 
 public class ExampleClass : MonoBehaviour
 {
-    public GameObject code;    
-    public bool thing = false;    
+    public GameObject code;
+    public bool thing = false;
 
     void OnCollisionEnter()
     {
         thing = true;
+        Destroy(this.gameObject);
     }
-    void Update()
+    public bool DidItHit
     {
-        
-        Destroy(gameObject);
+        get
+        {
+            return thing;
+        }
+    
+    
     }
+
+
+
+    
 }

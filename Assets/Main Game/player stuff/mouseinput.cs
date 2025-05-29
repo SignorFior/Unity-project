@@ -15,11 +15,13 @@ public class mouseinput : MonoBehaviour
         private Vector3 WorldInCell;
         private Vector3 MouseInWorld;
         public Camera camCam;
-        public GameObject cubePrefab;
+        public TileBase SquarePrefab;
         private Vector3 MousePos;
         public Transform PlayerPosition;
         private Vector3 centering = new Vector3(0.5f, 0.5f);
-        private 
+        public Tilemap tilemap;
+        public ExampleClass scriptIONC;
+        public GameObject IONC;
 
         
         // Start is called before the first frame update
@@ -43,21 +45,21 @@ public class mouseinput : MonoBehaviour
                 WorldInCell = grid.WorldToCell(MouseInWorld);
                 //Debug.Log(WorldInCell + "Positoon");
 
+                Instantiate(IONC, WorldInCell + centering, Quaternion.identity);
 
-
-                RaycastHit2D hit = Physics2D.Raycast(WorldInCell + centering, PlayerPosition.transform.position, 0.5f);
+                //RaycastHit2D hit = Physics2D.Raycast(WorldInCell + centering, PlayerPosition.transform.position, 0.5f);
                 
-                Debug.DrawLine(WorldInCell + centering, PlayerPosition.transform.position, Color.blue, 1f);
+                //Debug.DrawLine(WorldInCell + centering, PlayerPosition.transform.position, Color.blue, 1f);
 
 
-                if (hit)
+                if (scriptIONC.DidItHit == true)
                 {
-                    Debug.Log(hit.collider);
-                    Debug.Log(hit.collider.name);
+                   scriptIONC.thing = false;
                 }
                 else
                 {
-                    Instantiate(cubePrefab, WorldInCell, Quaternion.identity);
+                    
+                   tilemap.SetTile(Vector3Int.FloorToInt(WorldInCell), SquarePrefab);
                 }
                 
 
