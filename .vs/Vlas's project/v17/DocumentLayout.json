@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\vlasa\\Vlas\u0027s project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C29D054F-163A-D7CF-3AA6-44840788E77E}|Assembly-CSharp.csproj|c:\\users\\vlasa\\vlas\u0027s project\\assets\\main game\\player stuff\\mouseinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C29D054F-163A-D7CF-3AA6-44840788E77E}|Assembly-CSharp.csproj|solutionrelative:assets\\main game\\player stuff\\mouseinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\vlasa\\vlas\u0027s project\\assets\\main game\\player stuff\\mouseinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\main game\\player stuff\\mouseinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C29D054F-163A-D7CF-3AA6-44840788E77E}|Assembly-CSharp.csproj|C:\\Users\\vlasa\\Vlas\u0027s project\\assets\\scr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C29D054F-163A-D7CF-3AA6-44840788E77E}|Assembly-CSharp.csproj|solutionrelative:assets\\scr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C29D054F-163A-D7CF-3AA6-44840788E77E}|Assembly-CSharp.csproj|C:\\Users\\vlasa\\Vlas\u0027s project\\assets\\collisioncheckforoccupied.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C29D054F-163A-D7CF-3AA6-44840788E77E}|Assembly-CSharp.csproj|solutionrelative:assets\\collisioncheckforoccupied.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,21 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CollisionCheckForOccupied.cs",
-              "DocumentMoniker": "C:\\Users\\vlasa\\Vlas\u0027s project\\Assets\\CollisionCheckForOccupied.cs",
-              "RelativeDocumentMoniker": "Assets\\CollisionCheckForOccupied.cs",
-              "ToolTip": "C:\\Users\\vlasa\\Vlas\u0027s project\\Assets\\CollisionCheckForOccupied.cs",
-              "RelativeToolTip": "Assets\\CollisionCheckForOccupied.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T16:25:07.592Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -45,7 +28,7 @@
               "RelativeDocumentMoniker": "Assets\\Main Game\\player stuff\\mouseinput.cs",
               "ToolTip": "C:\\Users\\vlasa\\Vlas\u0027s project\\Assets\\Main Game\\player stuff\\mouseinput.cs",
               "RelativeToolTip": "Assets\\Main Game\\player stuff\\mouseinput.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAowDkAAABQAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwDkAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-23T15:20:48.677Z",
               "EditorCaption": ""
@@ -60,8 +43,7 @@
               "RelativeToolTip": "Assets\\scr.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T16:40:06.175Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-22T16:40:06.175Z"
             }
           ]
         }
