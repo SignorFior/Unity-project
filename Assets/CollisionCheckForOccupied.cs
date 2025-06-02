@@ -3,21 +3,31 @@ using System.Collections;
 
 public class ExampleClass : MonoBehaviour
 {
-    public GameObject code;
-    public bool thing = false;
-
-    void OnCollisionEnter()
+    public bool touched = false;
+    public GameObject toDestroy;
+    private void Awake()
     {
-        thing = true;
-        Destroy(this.gameObject);
+        Debug.Log("i appeared");
+    }
+    void OnCollisionStay2D()
+    {
+        touched = true;
+        Debug.Log("Destroyng by OnCollisionStay2D");
+        Destroy(toDestroy);
+
     }
     public bool DidItHit
     {
         get
         {
-            return thing;
+            Debug.Log("returning touched" + touched);
+            return touched;
         }
-    
+        set
+        {
+            Debug.Log("Destroyng by set from didithit");
+            Destroy(toDestroy);
+        }
     
     }
 

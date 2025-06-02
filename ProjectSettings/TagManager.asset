@@ -11,9 +11,9 @@ TagManager:
   - player
   - Water
   - UI
-  - 
-  - 
-  - 
+  - water
+  - placable
+  - ground
   - 
   - 
   - 
@@ -41,9 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: New Layer 1
-    uniqueID: 3668993275
+  - name: ground
+    uniqueID: 94339339
     locked: 0
-  - name: New Layer 2
+  - name: player
+    uniqueID: 1331600411
+    locked: 0
+  - name: placable
     uniqueID: 1225848387
+    locked: 0
+  - name: water
+    uniqueID: 3668993275
     locked: 0
