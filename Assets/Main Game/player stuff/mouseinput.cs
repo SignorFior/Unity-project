@@ -22,6 +22,8 @@ public class mouseinput : MonoBehaviour
         [SerializeField] private Tilemap GroundTilemap;
         [SerializeField] private Tilemap PlaceableTilemap;
         [SerializeField] private Tilemap WaterTilemap;
+        [SerializeField] private GameObject TheCrack;
+        
 
 
         void Update()
@@ -29,7 +31,7 @@ public class mouseinput : MonoBehaviour
 
             if (Input.GetMouseButtonDown(0))
             {
-            
+                
 
                 MousePos = Input.mousePosition;
                 MouseInWorld = camCam.ScreenToWorldPoint(MousePos);
@@ -40,19 +42,25 @@ public class mouseinput : MonoBehaviour
                 RaycastHit2D Hit = Physics2D.BoxCast(WorldInCell + centering, new Vector2(0.98f, 0.98f), 0f, new Vector2(0, 0));
 
 
-                    if (Hit)
+                if (Hit)
+                {
+                    Debug.Log("GOT          HIT");
+                    while (Input.GetMouseButtonDown(0))
                     {
-                        Debug.Log("GOT          HIT");
                         
+                        Instantiate(TheCrack, WorldInCell, Quaternion.identity);
                     }
-                    else
-                    {
-                        Debug.Log("not hit");
 
-                        GroundTilemap.SetTile(Vector3Int.FloorToInt(WorldInCell), SquarePrefab);
-                    }
+                }
+                else
+                {
+                    Debug.Log("not hit");
+
+                    GroundTilemap.SetTile(Vector3Int.FloorToInt(WorldInCell), SquarePrefab);
+                }
             }
         
         }
-        
+     
+    
 }   
