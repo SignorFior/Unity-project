@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading;
 using Unity.VisualScripting;
 using UnityEditor.U2D.Aseprite;
+using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using UnityEngine.UIElements;
@@ -22,7 +23,9 @@ public class mouseinput : MonoBehaviour
         [SerializeField] private Tilemap GroundTilemap;
         [SerializeField] private Tilemap PlaceableTilemap;
         [SerializeField] private Tilemap WaterTilemap;
-        [SerializeField] private GameObject TheCrack;
+        public GameObject TheCrack;
+        public bool isCrackPresen = false;
+        public bool isBreaking = false;
         
 
 
@@ -44,23 +47,54 @@ public class mouseinput : MonoBehaviour
 
                 if (Hit)
                 {
-                    Debug.Log("GOT          HIT");
-                    while (Input.GetMouseButtonDown(0))
-                    {
-                        
-                        Instantiate(TheCrack, WorldInCell, Quaternion.identity);
-                    }
-
+                    BreakingTheBlock();
                 }
                 else
                 {
                     Debug.Log("not hit");
 
-                    GroundTilemap.SetTile(Vector3Int.FloorToInt(WorldInCell), SquarePrefab);
+                    PlaceableTilemap.SetTile(Vector3Int.FloorToInt(WorldInCell), SquarePrefab);
+                }
+            }
+            if (Input.GetMouseButtonUp(0))
+            {
+                Debug.Log("triggered mouse up");
+
+                if (isBreaking == true)
+                {
+                    Destroy(GameObject.Find("thecrack(Clone)"));
+                    isBreaking = false;
+                    Debug.Log("destroyed");
                 }
             }
         
         }
-     
-    
+        
+
+
+
+
+
+        private void BreakingTheBlock()
+        {
+            Debug.Log("GOT          HIT");
+            if (Input.GetMouseButtonDown(0) == true)
+            {
+                if (isCrackPresen == false)
+                {
+                    Instantiate(TheCrack, WorldInCell, Quaternion.identity);
+                    isCrackPresen = true;
+                    isBreaking = true;
+                    Debug.Log("The crack is here");
+
+                }
+
+
+            }
+            
+
+        }
+
+
+
 }   

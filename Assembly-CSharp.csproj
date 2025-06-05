@@ -68,6 +68,7 @@
     <Compile Include="Assets\scr.cs" />
     <Compile Include="Assets\Main Game\Scenes\NewCustomRuleTile.cs" />
     <Compile Include="Assets\PlacementSystem.cs" />
+    <Compile Include="Assets\onMouseup.cs" />
     <Compile Include="Assets\mousePointRay.cs" />
   </ItemGroup>
   <ItemGroup>

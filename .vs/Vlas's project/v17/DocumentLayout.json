@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{C29D054F-163A-D7CF-3AA6-44840788E77E}|Assembly-CSharp.csproj|c:\\users\\ostroglv\\vlas\u0027s project\\assets\\main game\\player stuff\\mouseinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C29D054F-163A-D7CF-3AA6-44840788E77E}|Assembly-CSharp.csproj|solutionrelative:assets\\main game\\player stuff\\mouseinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C29D054F-163A-D7CF-3AA6-44840788E77E}|Assembly-CSharp.csproj|c:\\users\\ostroglv\\vlas\u0027s project\\assets\\onmouseup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C29D054F-163A-D7CF-3AA6-44840788E77E}|Assembly-CSharp.csproj|solutionrelative:assets\\onmouseup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "onMouseup.cs",
+              "DocumentMoniker": "C:\\Users\\OSTROGLV\\Vlas\u0027s project\\Assets\\onMouseup.cs",
+              "RelativeDocumentMoniker": "Assets\\onMouseup.cs",
+              "ToolTip": "C:\\Users\\OSTROGLV\\Vlas\u0027s project\\Assets\\onMouseup.cs",
+              "RelativeToolTip": "Assets\\onMouseup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T16:19:36.273Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +41,7 @@
               "RelativeDocumentMoniker": "Assets\\Main Game\\player stuff\\mouseinput.cs",
               "ToolTip": "C:\\Users\\OSTROGLV\\Vlas\u0027s project\\Assets\\Main Game\\player stuff\\mouseinput.cs",
               "RelativeToolTip": "Assets\\Main Game\\player stuff\\mouseinput.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAQwC0AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAYwDoAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-23T15:20:48.677Z",
               "EditorCaption": ""
