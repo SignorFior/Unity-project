@@ -60,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Main Game\player stuff\PlayerMovement.cs" />
+    <Compile Include="Assets\PlacebleBlockInterraction.cs" />
     <Compile Include="Assets\gridScript.cs" />
     <Compile Include="Assets\CollisionCheckForOccupied.cs" />
     <Compile Include="Assets\Main Game\player stuff\mouseFollow.cs" />

@@ -31,23 +31,45 @@ public class mouseinput : MonoBehaviour
 
         void Update()
         {
-
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonUp(0))
             {
-                
+                Debug.Log("triggered mouse up");
+                if(isBreaking == true)
+                {
+                    Destroy(GameObject.Find("thecrak(Clone)"));
+                    isBreaking = false;
+                    isCrackPresen = false;
+
+                Debug.Log("destroyed");
+                }
+            }
+            if (Input.GetMouseButton(0))
+            {
 
                 MousePos = Input.mousePosition;
                 MouseInWorld = camCam.ScreenToWorldPoint(MousePos);
                 WorldInCell = grid.WorldToCell(MouseInWorld);
-
-
 
                 RaycastHit2D Hit = Physics2D.BoxCast(WorldInCell + centering, new Vector2(0.98f, 0.98f), 0f, new Vector2(0, 0));
 
 
                 if (Hit)
                 {
-                    BreakingTheBlock();
+                    if (Input.GetMouseButtonDown(0) == true)
+                    {
+                        if (isCrackPresen == false)
+                        {
+                            Debug.Log("crack was ");
+
+                            Instantiate(TheCrack, WorldInCell, Quaternion.identity);
+                            isCrackPresen = true;
+                            isBreaking = true;
+                            Debug.Log("The crack is here");
+
+                        }
+
+
+                    }
                 }
                 else
                 {
@@ -56,45 +78,8 @@ public class mouseinput : MonoBehaviour
                     PlaceableTilemap.SetTile(Vector3Int.FloorToInt(WorldInCell), SquarePrefab);
                 }
             }
-            if (Input.GetMouseButtonUp(0))
-            {
-                Debug.Log("triggered mouse up");
 
-                if (isBreaking == true)
-                {
-                    Destroy(GameObject.Find("thecrack(Clone)"));
-                    isBreaking = false;
-                    Debug.Log("destroyed");
-                }
-            }
-        
-        }
-        
-
-
-
-
-
-        private void BreakingTheBlock()
-        {
-            Debug.Log("GOT          HIT");
-            if (Input.GetMouseButtonDown(0) == true)
-            {
-                if (isCrackPresen == false)
-                {
-                    Instantiate(TheCrack, WorldInCell, Quaternion.identity);
-                    isCrackPresen = true;
-                    isBreaking = true;
-                    Debug.Log("The crack is here");
-
-                }
-
-
-            }
             
-
         }
-
-
 
 }   
