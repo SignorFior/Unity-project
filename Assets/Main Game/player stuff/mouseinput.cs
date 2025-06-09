@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using Unity.VisualScripting;
-using UnityEditor.U2D.Aseprite;
-using UnityEditorInternal;
+//using UnityEditor.U2D.Aseprite;
+//using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using UnityEngine.UIElements;
-using UnityEngine.WSA;
+//using UnityEngine.WSA;
 
 
 public class mouseinput : MonoBehaviour
@@ -24,52 +24,27 @@ public class mouseinput : MonoBehaviour
         [SerializeField] private Tilemap PlaceableTilemap;
         [SerializeField] private Tilemap WaterTilemap;
         public GameObject TheCrack;
-        public bool isCrackPresen = false;
-        public bool isBreaking = false;
+
         
 
 
         void Update()
         {
-            if (Input.GetMouseButtonUp(0))
-            {
-                Debug.Log("triggered mouse up");
-                if(isBreaking == true)
-                {
-                    Destroy(GameObject.Find("thecrak(Clone)"));
-                    isBreaking = false;
-                    isCrackPresen = false;
 
-                Debug.Log("destroyed");
-                }
-            }
-            if (Input.GetMouseButton(0))
+            if (Input.GetMouseButton(1))
             {
 
                 MousePos = Input.mousePosition;
                 MouseInWorld = camCam.ScreenToWorldPoint(MousePos);
                 WorldInCell = grid.WorldToCell(MouseInWorld);
 
-                RaycastHit2D Hit = Physics2D.BoxCast(WorldInCell + centering, new Vector2(0.98f, 0.98f), 0f, new Vector2(0, 0));
+                RaycastHit2D Hit = Physics2D.BoxCast(WorldInCell + centering, new Vector2(0.98f, 0.98f), 0f, new Vector2(0, 0), 3f, 7);
 
 
                 if (Hit)
                 {
-                    if (Input.GetMouseButtonDown(0) == true)
-                    {
-                        if (isCrackPresen == false)
-                        {
-                            Debug.Log("crack was ");
-
-                            Instantiate(TheCrack, WorldInCell, Quaternion.identity);
-                            isCrackPresen = true;
-                            isBreaking = true;
-                            Debug.Log("The crack is here");
-
-                        }
-
-
-                    }
+                    //AselectedTile = PlaceableTilemap.GetInstantiatedObject(Vector3Int.FloorToInt(WorldInCell));
+                    //AselectedTile
                 }
                 else
                 {
