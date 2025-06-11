@@ -43,8 +43,7 @@ public class mouseinput : MonoBehaviour
 
                 if (Hit)
                 {
-                    //AselectedTile = PlaceableTilemap.GetInstantiatedObject(Vector3Int.FloorToInt(WorldInCell));
-                    //AselectedTile
+
                 }
                 else
                 {
